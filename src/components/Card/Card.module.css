@@ -1,0 +1,51 @@
+
+.card {
+    width: 200px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+}
+
+/* Add some padding inside the card container */
+.card_container {
+    padding: 5px 0px;
+}
+
+.card_image {
+    border-radius: 3px;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */ 
+.card_image_container {
+    position: relative;
+    /* width: 50%; */
+}
+
+/* Make the image responsive */
+.card_image_container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the button and place it in the middle of the card_image_container/image */
+.card_btn {
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card_image_container .btn:hover {
+    background-color: black;
+}

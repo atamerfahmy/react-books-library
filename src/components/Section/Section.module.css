@@ -1,0 +1,18 @@
+.container {
+    padding: 25px 15px;
+}
+
+.title {
+    margin: 0px;
+    /* font-weight: 400; */
+    padding-bottom: 5px;
+    border-bottom: 1px rgba(87, 87, 87, 0.2) solid;
+}
+
+.books_container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    row-gap: 25px;
+    margin-top: 50px;
+}
