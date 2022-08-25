@@ -58,11 +58,11 @@ function HomePage() {
     }
 
     useEffect(() => {
-        setCurrentlyReading([...JSON.parse(localStorage.getItem("currentlyReading"))])
+        setCurrentlyReading(JSON.parse(localStorage.getItem("currentlyReading")) || [])
 
-        setWantToRead([...JSON.parse(localStorage.getItem("wantToRead"))])
+        setWantToRead(JSON.parse(localStorage.getItem("wantToRead")) || [])
 
-        setRead([...JSON.parse(localStorage.getItem("read"))])
+        setRead(JSON.parse(localStorage.getItem("read")) || [])
     }, [])
 
     const searchHandler = (e) => {
